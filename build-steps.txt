@@ -1,0 +1,11 @@
+// steps to make an own build
+
+git clone https://github.com/ImageMagick/ImageMagick.git ImageMagick-7.1.0
+
+cd ImageMagick-7.1.0
+
+./configure --with-modules
+
+make -j$(nproc)
+
+sudo make install
