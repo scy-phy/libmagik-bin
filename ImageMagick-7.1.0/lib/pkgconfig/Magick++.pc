@@ -1,8 +1,8 @@
-prefix=/home/silvio/IMP
+prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include/ImageMagick-7
-includearchdir=/home/silvio/IMP/include/ImageMagick-7
+includearchdir=/usr/local/include/ImageMagick-7
 libname=Magick++-7.Q16HDRI
  
 Name: Magick++
