@@ -5,7 +5,7 @@
 #
 #
 
-prefix=/home/silvio/IMP
+prefix=/usr/local
 exec_prefix=${prefix}
 
 usage='Usage: Magick++-config [--cppflags] [--cxxflags] [--exec-prefix] [--ldflags] [--libs] [--prefix] [--version]
@@ -41,19 +41,19 @@ while test $# -gt 0; do
       echo '7.1.0 Q16 HDRI'
       ;;
     --cflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+       --cflags Magick++-7.Q16HDRI
       ;;
     --cxxflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+       --cflags Magick++-7.Q16HDRI
       ;;
     --cppflags)
-      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
+       --cflags Magick++-7.Q16HDRI
       ;;
     --ldflags)
-      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
+       --libs Magick++-7.Q16HDRI
       ;;
     --libs)
-      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
+       --libs Magick++-7.Q16HDRI
       ;;
     *)
       echo "${usage}" 1>&2

@@ -17,7 +17,7 @@ old_library=''
 inherited_linker_flags=' -fopenmp -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' /home/silvio/IMP/lib/libMagickCore-7.Q16HDRI.la -llcms2 -lfreetype -lXext -lSM -lICE -lX11 -lbz2 -lltdl -lpthread -lxml2 -llzma -lz -lm'
+dependency_libs=' /usr/local/lib/libMagickCore-7.Q16HDRI.la /usr/lib/aarch64-linux-gnu/libltdl.la -ldl -lpthread -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/silvio/IMP/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders'
+libdir='/usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders'

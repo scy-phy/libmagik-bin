@@ -11,39 +11,39 @@
 -->
 <configuremap>
   <configure name="CC" value="gcc"/>
-  <configure name="CFLAGS" value="-I/usr/include/libxml2   -I/usr/include/libpng16   -I/usr/include/freetype2 -I/usr/include/libpng16   -fopenmp -Wall -g -O2 -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
-  <configure name="CODER_PATH" value="/home/silvio/IMP/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders"/>
-  <configure name="CONFIGURE_PATH" value="/home/silvio/IMP/etc/ImageMagick-7/"/>
-  <configure name="CONFIGURE" value="./configure  '--prefix=/home/silvio/IMP/' '--with-modules'"/>
+  <configure name="CFLAGS" value="-fopenmp -Wall -g -O2 -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CODER_PATH" value="/usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders"/>
+  <configure name="CONFIGURE_PATH" value="/usr/local/etc/ImageMagick-7/"/>
+  <configure name="CONFIGURE" value="./configure  '--enable-shared' '--with-modules' '--with-gslib'"/>
   <configure name="COPYRIGHT" value="Copyright (C) 1999-2021 ImageMagick Studio LLC"/>
-  <configure name="CPPFLAGS" value="-I/home/silvio/IMP/include/ImageMagick-7"/>
+  <configure name="CPPFLAGS" value="-I/usr/local/include/ImageMagick-7"/>
   <configure name="CXXFLAGS" value=" -pthread"/>
   <configure name="CXX" value="g++"/>
   <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
-  <configure name="DELEGATES" value="bzlib freetype jbig jng jpeg lcms lzma png ps tiff webp wmf x xml zlib zstd"/>
-  <configure name="DISTCHECK_CONFIG_FLAGS" value=" --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-autotrace=no  --with-fftw=no  --with-flif=no  --with-gslib=no  --with-fontpath=  --with-rsvg=no  --with-perl=no "/>
-  <configure name="DOCUMENTATION_PATH" value="/home/silvio/IMP/share/doc/ImageMagick-7"/>
-  <configure name="EXEC-PREFIX" value="/home/silvio/IMP"/>
-  <configure name="EXECUTABLE_PATH" value="/home/silvio/IMP/bin"/>
+  <configure name="DELEGATES" value=""/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value=" --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-autotrace=no  --with-fftw=no  --with-flif=no  --with-fontpath=  --with-rsvg=no  --with-perl=no "/>
+  <configure name="DOCUMENTATION_PATH" value="/usr/local/share/doc/ImageMagick-7"/>
+  <configure name="EXEC-PREFIX" value="/usr/local"/>
+  <configure name="EXECUTABLE_PATH" value="/usr/local/bin"/>
   <configure name="FEATURES" value="DPC HDRI Cipher OpenMP Modules"/>
-  <configure name="FILTER_PATH" value="/home/silvio/IMP/lib/ImageMagick-7.1.0/modules-Q16HDRI/filters"/>
-  <configure name="GIT_REVISION" value="19587:8d5921b11:20220122" />
-  <configure name="HOST" value="armv7l-unknown-linux-gnueabihf"/>
-  <configure name="INCLUDE_PATH" value="/home/silvio/IMP/include/ImageMagick-7"/>
-  <configure name="LDFLAGS" value="-L/home/silvio/IMP/lib  "/>
-  <configure name="LIBRARY_PATH" value="/home/silvio/IMP/lib/ImageMagick-7.1.0"/>
-  <configure name="LIBS" value=" -llcms2 -lfreetype    -lxml2   -lXext   -lSM -lICE -lX11   -lbz2 -lz   -lltdl  -lm    -lpthread  -lgomp"/>
+  <configure name="FILTER_PATH" value="/usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/filters"/>
+  <configure name="GIT_REVISION" value="19610" />
+  <configure name="HOST" value="aarch64-unknown-linux-gnu"/>
+  <configure name="INCLUDE_PATH" value="/usr/local/include/ImageMagick-7"/>
+  <configure name="LDFLAGS" value="-L/usr/local/lib "/>
+  <configure name="LIBRARY_PATH" value="/usr/local/lib/ImageMagick-7.1.0"/>
+  <configure name="LIBS" value="                 -lltdl  -lm    -lpthread  -lgomp"/>
   <configure name="LIB_VERSION_NUMBER" value="7,1,0,21"/>
   <configure name="LIB_VERSION" value="0x710"/>
   <configure name="NAME" value="ImageMagick"/>
   <configure name="PCFLAGS" value="-fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
-  <configure name="PREFIX" value="/home/silvio/IMP"/>
+  <configure name="PREFIX" value="/usr/local"/>
   <configure name="QuantumDepth" value="16"/>
-  <configure name="RELEASE_DATE" value="2022-01-22"/>
-  <configure name="SHAREARCH_PATH" value="/home/silvio/IMP/lib/ImageMagick-7.1.0/config-Q16HDRI"/>
-  <configure name="SHARE_PATH" value="/home/silvio/IMP/share/ImageMagick-7"/>
-  <configure name="TARGET_CPU" value="armv7l"/>
-  <configure name="TARGET_OS" value="linux-gnueabihf"/>
+  <configure name="RELEASE_DATE" value="2022-01-28"/>
+  <configure name="SHAREARCH_PATH" value="/usr/local/lib/ImageMagick-7.1.0/config-Q16HDRI"/>
+  <configure name="SHARE_PATH" value="/usr/local/share/ImageMagick-7"/>
+  <configure name="TARGET_CPU" value="aarch64"/>
+  <configure name="TARGET_OS" value="linux-gnu"/>
   <configure name="TARGET_VENDOR" value="unknown"/>
   <configure name="VERSION" value="7.1.0"/>
   <configure name="WEBSITE" value="https://imagemagick.org"/>

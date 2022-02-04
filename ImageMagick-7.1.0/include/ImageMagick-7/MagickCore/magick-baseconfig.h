@@ -17,9 +17,7 @@
 #endif
 
 /* Define if you have the bzip2 library */
-#ifndef MAGICKCORE_BZLIB_DELEGATE
-#define MAGICKCORE_BZLIB_DELEGATE 1
-#endif
+/* #undef BZLIB_DELEGATE */
 
 /* Define if you have CAIRO library */
 /* #undef CAIRO_DELEGATE */
@@ -39,7 +37,7 @@
 
 /* Directory where architecture-dependent configuration files live. */
 #ifndef MAGICKCORE_CONFIGURE_PATH
-#define MAGICKCORE_CONFIGURE_PATH "/home/silvio/IMP/etc/ImageMagick-7/"
+#define MAGICKCORE_CONFIGURE_PATH "/usr/local/etc/ImageMagick-7/"
 #endif
 
 /* Subdirectory of lib where architecture-dependent configuration files live.
@@ -53,7 +51,7 @@
 
 /* Directory where ImageMagick documents live. */
 #ifndef MAGICKCORE_DOCUMENTATION_PATH
-#define MAGICKCORE_DOCUMENTATION_PATH "/home/silvio/IMP/share/doc/ImageMagick-7/"
+#define MAGICKCORE_DOCUMENTATION_PATH "/usr/local/share/doc/ImageMagick-7/"
 #endif
 
 /* Define if you have Display Postscript */
@@ -64,7 +62,7 @@
 
 /* Directory where executables are installed. */
 #ifndef MAGICKCORE_EXECUTABLE_PATH
-#define MAGICKCORE_EXECUTABLE_PATH "/home/silvio/IMP/bin/"
+#define MAGICKCORE_EXECUTABLE_PATH "/usr/local/bin/"
 #endif
 
 /* Define if you have FFTW library */
@@ -85,9 +83,7 @@
 /* #undef FPX_DELEGATE */
 
 /* Define if you have FREETYPE library */
-#ifndef MAGICKCORE_FREETYPE_DELEGATE
-#define MAGICKCORE_FREETYPE_DELEGATE 1
-#endif
+/* #undef FREETYPE_DELEGATE */
 
 /* Define if you have Ghostscript library or framework */
 /* #undef GS_DELEGATE */
@@ -385,9 +381,7 @@
 /* #undef HAVE_JEMALLOC */
 
 /* Define if you have the <lcms2.h> header file. */
-#ifndef MAGICKCORE_HAVE_LCMS2_H
-#define MAGICKCORE_HAVE_LCMS2_H 1
-#endif
+/* #undef HAVE_LCMS2_H */
 
 /* Define if you have the <lcms2/lcms2.h> header file. */
 /* #undef HAVE_LCMS2_LCMS2_H */
@@ -659,14 +653,10 @@
 #endif
 
 /* X11 server supports shape extension */
-#ifndef MAGICKCORE_HAVE_SHAPE
-#define MAGICKCORE_HAVE_SHAPE 1
-#endif
+/* #undef HAVE_SHAPE */
 
 /* X11 server supports shared memory extension */
-#ifndef MAGICKCORE_HAVE_SHARED_MEMORY
-#define MAGICKCORE_HAVE_SHARED_MEMORY 1
-#endif
+/* #undef HAVE_SHARED_MEMORY */
 
 /* Define to 1 if you have the `sigaction' function. */
 #ifndef MAGICKCORE_HAVE_SIGACTION
@@ -940,54 +930,34 @@
 #endif
 
 /* Define to 1 if you have the <tiffconf.h> header file. */
-#ifndef MAGICKCORE_HAVE_TIFFCONF_H
-#define MAGICKCORE_HAVE_TIFFCONF_H 1
-#endif
+/* #undef HAVE_TIFFCONF_H */
 
 /* Define to 1 if you have the `TIFFIsBigEndian' function. */
-#ifndef MAGICKCORE_HAVE_TIFFISBIGENDIAN
-#define MAGICKCORE_HAVE_TIFFISBIGENDIAN 1
-#endif
+/* #undef HAVE_TIFFISBIGENDIAN */
 
 /* Define to 1 if you have the `TIFFIsCODECConfigured' function. */
-#ifndef MAGICKCORE_HAVE_TIFFISCODECCONFIGURED
-#define MAGICKCORE_HAVE_TIFFISCODECCONFIGURED 1
-#endif
+/* #undef HAVE_TIFFISCODECCONFIGURED */
 
 /* Define to 1 if you have the `TIFFMergeFieldInfo' function. */
-#ifndef MAGICKCORE_HAVE_TIFFMERGEFIELDINFO
-#define MAGICKCORE_HAVE_TIFFMERGEFIELDINFO 1
-#endif
+/* #undef HAVE_TIFFMERGEFIELDINFO */
 
 /* Define to 1 if you have the `TIFFReadEXIFDirectory' function. */
-#ifndef MAGICKCORE_HAVE_TIFFREADEXIFDIRECTORY
-#define MAGICKCORE_HAVE_TIFFREADEXIFDIRECTORY 1
-#endif
+/* #undef HAVE_TIFFREADEXIFDIRECTORY */
 
 /* Define to 1 if you have the `TIFFReadGPSDirectory' function. */
-#ifndef MAGICKCORE_HAVE_TIFFREADGPSDIRECTORY
-#define MAGICKCORE_HAVE_TIFFREADGPSDIRECTORY 1
-#endif
+/* #undef HAVE_TIFFREADGPSDIRECTORY */
 
 /* Define to 1 if you have the `TIFFSetErrorHandlerExt' function. */
-#ifndef MAGICKCORE_HAVE_TIFFSETERRORHANDLEREXT
-#define MAGICKCORE_HAVE_TIFFSETERRORHANDLEREXT 1
-#endif
+/* #undef HAVE_TIFFSETERRORHANDLEREXT */
 
 /* Define to 1 if you have the `TIFFSetTagExtender' function. */
-#ifndef MAGICKCORE_HAVE_TIFFSETTAGEXTENDER
-#define MAGICKCORE_HAVE_TIFFSETTAGEXTENDER 1
-#endif
+/* #undef HAVE_TIFFSETTAGEXTENDER */
 
 /* Define to 1 if you have the `TIFFSetWarningHandlerExt' function. */
-#ifndef MAGICKCORE_HAVE_TIFFSETWARNINGHANDLEREXT
-#define MAGICKCORE_HAVE_TIFFSETWARNINGHANDLEREXT 1
-#endif
+/* #undef HAVE_TIFFSETWARNINGHANDLEREXT */
 
 /* Define to 1 if you have the `TIFFSwabArrayOfTriples' function. */
-#ifndef MAGICKCORE_HAVE_TIFFSWABARRAYOFTRIPLES
-#define MAGICKCORE_HAVE_TIFFSWABARRAYOFTRIPLES 1
-#endif
+/* #undef HAVE_TIFFSWABARRAYOFTRIPLES */
 
 /* Define to 1 if you have the `times' function. */
 #ifndef MAGICKCORE_HAVE_TIMES
@@ -1155,12 +1125,12 @@
 
 /* Directory where ImageMagick architecture headers live. */
 #ifndef MAGICKCORE_INCLUDEARCH_PATH
-#define MAGICKCORE_INCLUDEARCH_PATH "/home/silvio/IMP/include/ImageMagick-7/"
+#define MAGICKCORE_INCLUDEARCH_PATH "/usr/local/include/ImageMagick-7/"
 #endif
 
 /* Directory where ImageMagick headers live. */
 #ifndef MAGICKCORE_INCLUDE_PATH
-#define MAGICKCORE_INCLUDE_PATH "/home/silvio/IMP/include/ImageMagick-7/"
+#define MAGICKCORE_INCLUDE_PATH "/usr/local/include/ImageMagick-7/"
 #endif
 
 /* ImageMagick is formally installed under prefix */
@@ -1169,29 +1139,23 @@
 #endif
 
 /* Define if you have JBIG library */
-#ifndef MAGICKCORE_JBIG_DELEGATE
-#define MAGICKCORE_JBIG_DELEGATE 1
-#endif
+/* #undef JBIG_DELEGATE */
 
 /* Define if you have JPEG library */
-#ifndef MAGICKCORE_JPEG_DELEGATE
-#define MAGICKCORE_JPEG_DELEGATE 1
-#endif
+/* #undef JPEG_DELEGATE */
 
 /* Define if you have jpeg-xl library */
 /* #undef JXL_DELEGATE */
 
 /* Define if you have LCMS library */
-#ifndef MAGICKCORE_LCMS_DELEGATE
-#define MAGICKCORE_LCMS_DELEGATE 1
-#endif
+/* #undef LCMS_DELEGATE */
 
 /* Define if you have OPENJP2 library */
 /* #undef LIBOPENJP2_DELEGATE */
 
 /* Directory where architecture-dependent files live. */
 #ifndef MAGICKCORE_LIBRARY_PATH
-#define MAGICKCORE_LIBRARY_PATH "/home/silvio/IMP/lib/ImageMagick-7.1.0/"
+#define MAGICKCORE_LIBRARY_PATH "/usr/local/lib/ImageMagick-7.1.0/"
 #endif
 
 /* Subdirectory of lib where ImageMagick architecture dependent files are
@@ -1226,21 +1190,19 @@
 #endif
 
 /* Define if you have LZMA library */
-#ifndef MAGICKCORE_LZMA_DELEGATE
-#define MAGICKCORE_LZMA_DELEGATE 1
-#endif
+/* #undef LZMA_DELEGATE */
 
 /* Define to prepend to default font search path. */
 /* #undef MAGICK_FONT_PATH */
 
 /* Target Host CPU */
 #ifndef MAGICKCORE_MAGICK_TARGET_CPU
-#define MAGICKCORE_MAGICK_TARGET_CPU armv7l
+#define MAGICKCORE_MAGICK_TARGET_CPU aarch64
 #endif
 
 /* Target Host OS */
 #ifndef MAGICKCORE_MAGICK_TARGET_OS
-#define MAGICKCORE_MAGICK_TARGET_OS linux-gnueabihf
+#define MAGICKCORE_MAGICK_TARGET_OS linux-gnu
 #endif
 
 /* Target Host Vendor */
@@ -1308,9 +1270,7 @@
 /* #undef PIPES_SUPPORT */
 
 /* Define if you have PNG library */
-#ifndef MAGICKCORE_PNG_DELEGATE
-#define MAGICKCORE_PNG_DELEGATE 1
-#endif
+/* #undef PNG_DELEGATE */
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -1363,7 +1323,7 @@
 
 /* Directory where architecture-independent configuration files live. */
 #ifndef MAGICKCORE_SHARE_PATH
-#define MAGICKCORE_SHARE_PATH "/home/silvio/IMP/share/ImageMagick-7/"
+#define MAGICKCORE_SHARE_PATH "/usr/local/share/ImageMagick-7/"
 #endif
 
 /* Subdirectory of lib where architecture-independent configuration files
@@ -1394,12 +1354,12 @@
 
 /* The size of `long double', as computed by sizeof. */
 #ifndef MAGICKCORE_SIZEOF_LONG_DOUBLE
-#define MAGICKCORE_SIZEOF_LONG_DOUBLE 8
+#define MAGICKCORE_SIZEOF_LONG_DOUBLE 16
 #endif
 
 /* The size of `ssize_t', as computed by sizeof. */
 #ifndef MAGICKCORE_SIZEOF_SSIZE_T
-#define MAGICKCORE_SIZEOF_SSIZE_T 4
+#define MAGICKCORE_SIZEOF_SSIZE_T 8
 #endif
 
 /* The size of `unsigned long long', as computed by sizeof. */
@@ -1409,7 +1369,7 @@
 
 /* The size of `void *', as computed by sizeof. */
 #ifndef MAGICKCORE_SIZEOF_VOID_P
-#define MAGICKCORE_SIZEOF_VOID_P 4
+#define MAGICKCORE_SIZEOF_VOID_P 8
 #endif
 
 /* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
@@ -1431,9 +1391,7 @@
 #endif
 
 /* Define if you have TIFF library */
-#ifndef MAGICKCORE_TIFF_DELEGATE
-#define MAGICKCORE_TIFF_DELEGATE 1
-#endif
+/* #undef TIFF_DELEGATE */
 
 /* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
 #ifndef MAGICKCORE_TIME_WITH_SYS_TIME
@@ -1466,14 +1424,10 @@
 
 
 /* Define if you have WEBPMUX library */
-#ifndef MAGICKCORE_WEBPMUX_DELEGATE
-#define MAGICKCORE_WEBPMUX_DELEGATE 1
-#endif
+/* #undef WEBPMUX_DELEGATE */
 
 /* Define if you have WEBP library */
-#ifndef MAGICKCORE_WEBP_DELEGATE
-#define MAGICKCORE_WEBP_DELEGATE 1
-#endif
+/* #undef WEBP_DELEGATE */
 
 /* Define to use the Windows GDI32 library */
 /* #undef WINGDI32_DELEGATE */
@@ -1482,9 +1436,7 @@
 /* #undef WITH_DMALLOC */
 
 /* Define if you have WMF library */
-#ifndef MAGICKCORE_WMF_DELEGATE
-#define MAGICKCORE_WMF_DELEGATE 1
-#endif
+/* #undef WMF_DELEGATE */
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
@@ -1504,17 +1456,15 @@
 #endif
 
 /* Define if you have X11 library */
-#ifndef MAGICKCORE_X11_DELEGATE
-#define MAGICKCORE_X11_DELEGATE 1
-#endif
+/* #undef X11_DELEGATE */
 
 /* Define if you have XML library */
-#ifndef MAGICKCORE_XML_DELEGATE
-#define MAGICKCORE_XML_DELEGATE 1
-#endif
+/* #undef XML_DELEGATE */
 
 /* Define to 1 if the X Window System is missing or not being used. */
-/* #undef X_DISPLAY_MISSING */
+#ifndef MAGICKCORE_X_DISPLAY_MISSING
+#define MAGICKCORE_X_DISPLAY_MISSING 1
+#endif
 
 /* Build self-contained, embeddable, zero-configuration ImageMagick */
 /* #undef ZERO_CONFIGURATION_SUPPORT */
@@ -1523,14 +1473,10 @@
 /* #undef ZIP_DELEGATE */
 
 /* Define if you have ZLIB library */
-#ifndef MAGICKCORE_ZLIB_DELEGATE
-#define MAGICKCORE_ZLIB_DELEGATE 1
-#endif
+/* #undef ZLIB_DELEGATE */
 
 /* Define if you have ZSTD library */
-#ifndef MAGICKCORE_ZSTD_DELEGATE
-#define MAGICKCORE_ZSTD_DELEGATE 1
-#endif
+/* #undef ZSTD_DELEGATE */
 
 /* Enable large inode numbers on Mac OS X 10.5.  */
 #ifndef _DARWIN_USE_64_BIT_INODE
@@ -1538,9 +1484,7 @@
 #endif
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-#ifndef MAGICKCORE__FILE_OFFSET_BITS
-#define MAGICKCORE__FILE_OFFSET_BITS 64
-#endif
+/* #undef _FILE_OFFSET_BITS */
 
 /* enable run-time bounds-checking */
 /* #undef _FORTIFY_SOURCE */

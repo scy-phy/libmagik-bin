@@ -4,7 +4,7 @@
 # required to use the MagickCore library.
 #
 
-prefix=/home/silvio/IMP
+prefix=/usr/local
 exec_prefix=${prefix}
 
 usage="\
@@ -38,25 +38,25 @@ while test $# -gt 0; do
       echo '7.1.0-21 Q16 HDRI'
       ;;
     --cflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+       --cflags MagickCore-7.Q16HDRI
       ;;
     --cxxflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+       --cflags MagickCore-7.Q16HDRI
       ;;
     --cppflags)
-      /usr/bin/pkg-config --cflags MagickCore-7.Q16HDRI
+       --cflags MagickCore-7.Q16HDRI
       ;;
     --ldflags)
-      /usr/bin/pkg-config --libs MagickCore-7.Q16HDRI
+       --libs MagickCore-7.Q16HDRI
       ;;
     --libs)
-      /usr/bin/pkg-config --libs MagickCore-7.Q16HDRI
+       --libs MagickCore-7.Q16HDRI
       ;;
     --coder-path)
-      echo "/home/silvio/IMP/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders"
+      echo "/usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/coders"
       ;;
     --filter-path)
-      echo "/home/silvio/IMP/lib/ImageMagick-7.1.0/modules-Q16HDRI/filters"
+      echo "/usr/local/lib/ImageMagick-7.1.0/modules-Q16HDRI/filters"
       ;;
     *)
       echo "${usage}" 1>&2

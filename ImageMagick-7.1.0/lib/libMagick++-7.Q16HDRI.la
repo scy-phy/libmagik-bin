@@ -17,7 +17,7 @@ old_library='libMagick++-7.Q16HDRI.a'
 inherited_linker_flags=' -pthread -fopenmp'
 
 # Libraries that this one depends upon.
-dependency_libs=' /home/silvio/IMP/lib/libMagickWand-7.Q16HDRI.la /home/silvio/IMP/lib/libMagickCore-7.Q16HDRI.la -llcms2 -lfreetype -lxml2 -lXext -lbz2 -lz -lltdl -lSM -lICE -lX11 -lgomp'
+dependency_libs=' /usr/local/lib/libMagickWand-7.Q16HDRI.la /usr/local/lib/libMagickCore-7.Q16HDRI.la /usr/lib/aarch64-linux-gnu/libltdl.la -ldl -lgomp'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/silvio/IMP/lib'
+libdir='/usr/local/lib'
