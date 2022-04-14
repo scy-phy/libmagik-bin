@@ -1,5 +1,5 @@
 /*
-  Copyright 1999-2021 ImageMagick Studio LLC, a non-profit organization
+  Copyright @ 2000 ImageMagick Studio LLC, a non-profit organization
   dedicated to making software imaging solutions freely available.
 
   You may not use this file except in compliance with the License.  You may
@@ -75,6 +75,7 @@ extern ModuleExport size_t
   RegisterFL32Image(void),
   RegisterFLIFImage(void),
   RegisterFPXImage(void),
+  RegisterFTXTImage(void),
   RegisterG3Image(void),
   RegisterGIFImage(void),
   RegisterGIF87Image(void),
@@ -112,7 +113,6 @@ extern ModuleExport size_t
   RegisterMNGImage(void),
   RegisterMONOImage(void),
   RegisterMPCImage(void),
-  RegisterMPEGImage(void),
   RegisterMPRImage(void),
   RegisterMSLImage(void),
   RegisterMTVImage(void),
@@ -150,6 +150,7 @@ extern ModuleExport size_t
   RegisterPSDImage(void),
   RegisterPTIFImage(void),
   RegisterPWPImage(void),
+  RegisterQOIImage(void),
   RegisterRASImage(void),
   RegisterRAWImage(void),
   RegisterRGBImage(void),
@@ -165,6 +166,7 @@ extern ModuleExport size_t
   RegisterSHTMLImage(void),
   RegisterSIXELImage(void),
   RegisterSTEGANOImage(void),
+  RegisterSTRIMGImage(void),
   RegisterSUNImage(void),
   RegisterSVGImage(void),
   RegisterTEXTImage(void),
@@ -197,7 +199,6 @@ extern ModuleExport size_t
   RegisterXCFImage(void),
   RegisterXPMImage(void),
   RegisterXPSImage(void),
-  RegisterXTRNImage(void),
   RegisterXVImage(void),
   RegisterXWDImage(void),
   RegisterYAMLImage(void),
@@ -247,6 +248,7 @@ extern ModuleExport void
   UnregisterFL32Image(void),
   UnregisterFLIFImage(void),
   UnregisterFPXImage(void),
+  UnregisterFTXTImage(void),
   UnregisterG3Image(void),
   UnregisterGIFImage(void),
   UnregisterGIF87Image(void),
@@ -285,7 +287,6 @@ extern ModuleExport void
   UnregisterMNGImage(void),
   UnregisterMONOImage(void),
   UnregisterMPCImage(void),
-  UnregisterMPEGImage(void),
   UnregisterMPRImage(void),
   UnregisterMSLImage(void),
   UnregisterMTVImage(void),
@@ -323,6 +324,7 @@ extern ModuleExport void
   UnregisterPSDImage(void),
   UnregisterPTIFImage(void),
   UnregisterPWPImage(void),
+  UnregisterQOIImage(void),
   UnregisterRASImage(void),
   UnregisterRAWImage(void),
   UnregisterRGBImage(void),
@@ -338,6 +340,7 @@ extern ModuleExport void
   UnregisterSHTMLImage(void),
   UnregisterSIXELImage(void),
   UnregisterSTEGANOImage(void),
+  UnregisterSTRIMGImage(void),
   UnregisterSUNImage(void),
   UnregisterSVGImage(void),
   UnregisterTEXTImage(void),
@@ -370,7 +373,6 @@ extern ModuleExport void
   UnregisterXCFImage(void),
   UnregisterXPMImage(void),
   UnregisterXPSImage(void),
-  UnregisterXTRNImage(void),
   UnregisterXVImage(void),
   UnregisterXWDImage(void),
   UnregisterYAMLImage(void),

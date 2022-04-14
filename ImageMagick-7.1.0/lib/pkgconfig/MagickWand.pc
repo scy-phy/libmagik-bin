@@ -12,4 +12,4 @@ Version: 7.1.0
 Requires: MagickCore-7.Q16HDRI
 Cflags: -I${includearchdir} -I${includedir} -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16
 Libs: -L${libdir} -l${libname}
-Libs.private: -L${libdir} -l${libname}                  -lltdl  -lm    -lpthread  -lgomp -lm
+Libs.private: -L${libdir} -l${libname}             -lSM -lICE -lX11  -lXt  -lz   -lltdl  -lm    -lpthread  -lgomp -lm

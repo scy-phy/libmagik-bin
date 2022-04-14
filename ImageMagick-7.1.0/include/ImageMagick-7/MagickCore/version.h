@@ -1,5 +1,5 @@
 /*
-  Copyright 1999-2021 ImageMagick Studio LLC, a non-profit organization
+  Copyright @ 1999 ImageMagick Studio LLC, a non-profit organization
   dedicated to making software imaging solutions freely available.
   
   You may not use this file except in compliance with the License.
@@ -26,20 +26,21 @@ extern "C" {
   Define declarations.
 */
 #define MagickPackageName "ImageMagick"
-#define MagickCopyright  "(C) 1999-2021 ImageMagick Studio LLC"
+#define MagickCopyright  "(C) 1999 ImageMagick Studio LLC"
 #define MagickLibVersion  0x710
 #define MagickLibVersionText  "7.1.0"
 #define MagickLibVersionNumber  10,0,0
-#define MagickLibAddendum  "-21"
+#define MagickLibAddendum  "-30"
 #define MagickLibInterface  10
 #define MagickLibMinInterface  10
 #define MagickPlatform  "aarch64"
 #define MagickppLibVersionText  "7.1.0"
 #define MagickppLibVersionNumber  5:0:0
-#define MagickppLibAddendum  "-21"
+#define MagickppLibAddendum  "-30"
 #define MagickppLibInterface  5
 #define MagickppLibMinInterface  5
-#define MagickReleaseDate  "2022-01-28"
+#define MagickGitRevision  "347b82801:20220327"
+#define MagickReleaseDate  "2022-03-27"
 #define MagickAuthoritativeLicense  \
   "https://imagemagick.org/script/license.php"
 #define MagickAuthoritativeURL  "https://imagemagick.org"
@@ -68,7 +69,7 @@ extern "C" {
 #define MagickVersion  \
   MagickPackageName " " MagickLibVersionText MagickLibAddendum " " \
   MagickQuantumDepth MagickHDRISupport " " MagickPlatform " " \
-  MagickReleaseDate " " MagickAuthoritativeURL
+  MagickGitRevision " " MagickAuthoritativeURL
 
 extern MagickExport char
   *GetMagickHomeURL(void);

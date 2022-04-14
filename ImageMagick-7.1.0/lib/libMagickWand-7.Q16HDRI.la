@@ -17,7 +17,7 @@ old_library='libMagickWand-7.Q16HDRI.a'
 inherited_linker_flags=' -fopenmp -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/local/lib/libMagickCore-7.Q16HDRI.la /usr/lib/aarch64-linux-gnu/libltdl.la -ldl -lpthread -lgomp -lm'
+dependency_libs=' /usr/local/lib/libMagickCore-7.Q16HDRI.la -lXt -lz /usr/lib/aarch64-linux-gnu/libltdl.la -ldl -lpthread -lSM -lICE -lX11 -lgomp -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

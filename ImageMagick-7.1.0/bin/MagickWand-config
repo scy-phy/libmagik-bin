@@ -35,22 +35,22 @@ while test $# -gt 0; do
       echo $exec_prefix
       ;;
     --version)
-      echo '7.1.0-21 Q16 HDRI'
+      echo '7.1.0-30 Q16 HDRI'
       ;;
     --cflags)
-       --cflags MagickWand-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickWand-7.Q16HDRI
       ;;
     --cxxflags)
-       --cflags MagickWand-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickWand-7.Q16HDRI
       ;;
     --cppflags)
-       --cflags MagickWand-7.Q16HDRI
+      /usr/bin/pkg-config --cflags MagickWand-7.Q16HDRI
       ;;
     --ldflags)
-       --libs MagickWand-7.Q16HDRI
+      /usr/bin/pkg-config --libs MagickWand-7.Q16HDRI
       ;;
     --libs)
-       --libs MagickWand-7.Q16HDRI
+      /usr/bin/pkg-config --libs MagickWand-7.Q16HDRI
       ;;
     *)
       echo "${usage}" 1>&2

@@ -1,5 +1,5 @@
 /*
-  Copyright 1999-2021 ImageMagick Studio LLC, a non-profit organization
+  Copyright @ 1999 ImageMagick Studio LLC, a non-profit organization
   dedicated to making software imaging solutions freely available.
 
   You may not use this file except in compliance with the License.  You may
@@ -91,6 +91,7 @@ typedef enum
   WriteMaskPixelChannel = 7,
   MetaPixelChannel = 8,
   CompositeMaskPixelChannel = 9,
+  MetaPixelChannels = 10,
   IntensityPixelChannel = MaxPixelChannels,  /* ???? */
   CompositePixelChannel = MaxPixelChannels,  /* ???? */
   SyncPixelChannel = MaxPixelChannels+1      /* not a real channel */

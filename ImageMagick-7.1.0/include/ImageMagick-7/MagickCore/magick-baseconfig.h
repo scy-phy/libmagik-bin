@@ -306,6 +306,11 @@
 #define MAGICKCORE_HAVE_GETDTABLESIZE 1
 #endif
 
+/* Define to 1 if you have the `getentropy' function. */
+#ifndef MAGICKCORE_HAVE_GETENTROPY
+#define MAGICKCORE_HAVE_GETENTROPY 1
+#endif
+
 /* Define to 1 if you have the `getexecname' function. */
 /* #undef HAVE_GETEXECNAME */
 
@@ -1142,7 +1147,9 @@
 /* #undef JBIG_DELEGATE */
 
 /* Define if you have JPEG library */
-/* #undef JPEG_DELEGATE */
+#ifndef MAGICKCORE_JPEG_DELEGATE
+#define MAGICKCORE_JPEG_DELEGATE 1
+#endif
 
 /* Define if you have jpeg-xl library */
 /* #undef JXL_DELEGATE */
@@ -1242,7 +1249,7 @@
 
 /* Define to the full name and version of this package. */
 #ifndef MAGICKCORE_PACKAGE_STRING
-#define MAGICKCORE_PACKAGE_STRING "ImageMagick 7.1.0-21"
+#define MAGICKCORE_PACKAGE_STRING "ImageMagick 7.1.0-30"
 #endif
 
 /* Define to the one symbol short name of this package. */
@@ -1257,7 +1264,7 @@
 
 /* Define to the version of this package. */
 #ifndef MAGICKCORE_PACKAGE_VERSION
-#define MAGICKCORE_PACKAGE_VERSION "7.1.0-21"
+#define MAGICKCORE_PACKAGE_VERSION "7.1.0-30"
 #endif
 
 /* Define if you have PANGOCAIRO library */
@@ -1270,7 +1277,9 @@
 /* #undef PIPES_SUPPORT */
 
 /* Define if you have PNG library */
-/* #undef PNG_DELEGATE */
+#ifndef MAGICKCORE_PNG_DELEGATE
+#define MAGICKCORE_PNG_DELEGATE 1
+#endif
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -1456,15 +1465,15 @@
 #endif
 
 /* Define if you have X11 library */
-/* #undef X11_DELEGATE */
+#ifndef MAGICKCORE_X11_DELEGATE
+#define MAGICKCORE_X11_DELEGATE 1
+#endif
 
 /* Define if you have XML library */
 /* #undef XML_DELEGATE */
 
 /* Define to 1 if the X Window System is missing or not being used. */
-#ifndef MAGICKCORE_X_DISPLAY_MISSING
-#define MAGICKCORE_X_DISPLAY_MISSING 1
-#endif
+/* #undef X_DISPLAY_MISSING */
 
 /* Build self-contained, embeddable, zero-configuration ImageMagick */
 /* #undef ZERO_CONFIGURATION_SUPPORT */
@@ -1473,7 +1482,9 @@
 /* #undef ZIP_DELEGATE */
 
 /* Define if you have ZLIB library */
-/* #undef ZLIB_DELEGATE */
+#ifndef MAGICKCORE_ZLIB_DELEGATE
+#define MAGICKCORE_ZLIB_DELEGATE 1
+#endif
 
 /* Define if you have ZSTD library */
 /* #undef ZSTD_DELEGATE */

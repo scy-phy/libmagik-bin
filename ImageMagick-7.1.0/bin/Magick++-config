@@ -41,19 +41,19 @@ while test $# -gt 0; do
       echo '7.1.0 Q16 HDRI'
       ;;
     --cflags)
-       --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
       ;;
     --cxxflags)
-       --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
       ;;
     --cppflags)
-       --cflags Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --cflags Magick++-7.Q16HDRI
       ;;
     --ldflags)
-       --libs Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
       ;;
     --libs)
-       --libs Magick++-7.Q16HDRI
+      /usr/bin/pkg-config --libs Magick++-7.Q16HDRI
       ;;
     *)
       echo "${usage}" 1>&2
